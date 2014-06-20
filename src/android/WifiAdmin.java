@@ -11,7 +11,7 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 
-public class WifiPlugin extends CordovaPlugin { 
+public class WifiAdmin extends CordovaPlugin { 
     /** Cordova Actions. */
     private static final String ACTION_GET_WIFI_INFO = "getWifiInfo";
     private static final String ACTION_ENABLE_WIFI = "enableWifi";

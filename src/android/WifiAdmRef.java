@@ -13,8 +13,8 @@ import android.net.wifi.WifiManager;
  * @author ZHF
  *
  */
-public class WifiAdmin {
-    private static  WifiAdmin wifiAdmin = null;
+public class WifiAdmRef {
+    private static  WifiAdmRef wifiAdmin = null;
                                                                                                                                                            
     private List<WifiConfiguration> mWifiConfiguration; //无线网络配置信息类集合(网络连接列表)
     private List<ScanResult> mWifiList; //检测到接入点信息类 集合
@@ -30,14 +30,14 @@ public class WifiAdmin {
      * @param context
      * @return
      */
-    public static WifiAdmin getInstance(Context context) {
+    public static WifiAdmRef getInstance(Context context) {
         if(wifiAdmin == null) {
-            wifiAdmin = new WifiAdmin(context);
+            wifiAdmin = new WifiAdmRef(context);
             return wifiAdmin;
         }
         return null;
     }
-    private WifiAdmin(Context context) {
+    private WifiAdmRef(Context context) {
         //获取系统Wifi服务   WIFI_SERVICE
         this.mWifiManager = (WifiManager) context.getSystemService("wifi");
         //获取连接信息

@@ -5,7 +5,7 @@
 	id="com.rjfun.cordova.plugin.wifi"
 	version="0.1">
       
-    <name>WiFi</name>
+    <name>WifiAdmin</name>
 	<description>Cordova plugin to access mobile device Wifi info and operation</description>
 	<author>Liming Xie</author>
 	<license>MIT</license>
@@ -14,15 +14,15 @@
 	    <engine name="cordova" version=">=2.9" />
 	</engines>
 
-    <js-module src="www/WiFi.js" name="WiFi">
-        <clobbers target="window.plugins.WiFi" />
+    <js-module src="www/WifiAdmin.js" name="WifiAdmin">
+        <clobbers target="window.plugins.WifiAdmin" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="WiFi">
-                <param name="android-package" value="com.rjfun.cordova.plugin.WiFi"/>
+            <feature name="WifiAdmin">
+                <param name="android-package" value="com.rjfun.cordova.plugin.WifiAdmin"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/*">
@@ -33,7 +33,8 @@
 			<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
         </config-file>
           
-        <source-file src="src/android/WiFi.java" target-dir="src/com/rjfun/cordova/plugin" />
+        <source-file src="src/android/WifiAdmin.java" target-dir="src/com/rjfun/cordova/plugin" />
+        <source-file src="src/android/WifiAdmRef.java" target-dir="src/com/rjfun/cordova/plugin" />
      </platform>
      
      <!-- ios -->
