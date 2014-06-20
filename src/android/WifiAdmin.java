@@ -1,7 +1,9 @@
-package org.apache.cordova.plugin;
+package com.rjfun.cordova.plugin;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
+import org.apache.cordova.PluginResult.Status;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,8 +12,12 @@ import android.content.Context;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.util.Log;
 
 public class WifiAdmin extends CordovaPlugin { 
+	
+	private static final String LOGTAG = "WifiAdmin";
+	
     /** Cordova Actions. */
     private static final String ACTION_GET_WIFI_INFO = "getWifiInfo";
     private static final String ACTION_ENABLE_WIFI = "enableWifi";

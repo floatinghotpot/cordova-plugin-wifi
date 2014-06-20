@@ -1,4 +1,5 @@
-package com.zhf.wifidemo.wifi.utils;
+package com.rjfun.cordova.plugin;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Iterator;
