@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-wifi",
+  "version": "0.5.0",
+  "description": "Cordova plugin to access mobile device WiFi",
+  "cordova": {
+    "id": "cordova-plugin-wifi",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/floatinghotpot/cordova-plugin-wifi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/cordova-plugin-wifi/issues"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "wifi",
+    "rjfun"
+  ],
+  "author": {
+    "name": "Raymond Xie",
+    "email": "rjfun.mobile@gmail.com"
+  },
+  "license": "MIT"
+}
